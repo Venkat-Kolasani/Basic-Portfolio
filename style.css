@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,700;1,9..40,400&display=swap');
+
+/* Base Styles */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.6;
+  color: #e0e0e0;
+}
+
+h1, h2, h3, p, ul, li, a {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+h2, h3 {
+  font-family: "DM Sans", sans-serif;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.container {
+  width: 90%;  
+  max-width: 1200px;  
+  margin: 0 auto;
+}
+
+a {
+  color: #a0a0a0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+/* Header and Navigation */
+header {
+  color: #ffffff;
+  padding: 15px 0;  
+  text-align: center;
+  border-bottom: 1px solid #333;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.2);
+}
+
+.header-nav {
+  background: linear-gradient(135deg, #000000, #252525);
+  padding: 10px 0;  
+}
+
+.hero {
+  text-align: center;
+  padding: 50px 0 5px;  
+  background: linear-gradient(135deg, #000000, #252525);
+}
+
+.hero .heading {
+  font-size: 3.2em;  
+  color: #ffffff;
+  letter-spacing: -1px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  margin-bottom: 5px;  
+}
+
+.hero .subheading {
+  font-size: 1.1em;  
+  color: #f0f0f0;
+  margin: 0 0 15px; 
+  font-weight: 300;
+}
+
+/* Navigation styling */
+.navbar-custom .nav-link {
+  color: #a0a0a0 !important;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+}
+
+.navbar-custom .nav-link:hover {
+  color: #ffffff !important;
+}
+
+/* Navigation menu adjustments */
+.navbar-nav {
+  border-top: 1px solid rgba(160, 160, 160, 0.3);
+  border-bottom: 1px solid rgba(160, 160, 160, 0.3);
+  padding: 6px 0;  
+  margin-top: 8px;      
+}
+
+.hero .navbar-nav {
+  margin-top: 10px;
+}
+
+/* Cards and Sections */
+section {
+  padding: 30px 0; 
+  margin: 15px 0;  
+}
+
+.card {
+  border: none !important;
+  border-radius: 6px !important;
+  background-color: #1e1e1e !important;
+  margin-bottom: 25px;  
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.card-body {
+  background-color: #1e1e1e !important;
+  border-radius: 6px !important;
+  padding: 25px !important;  
+}
+
+.card-text {
+  color: #cccccc;
+}
+
+/* Projects Page */
+.project-title {
+  color: #ffffff;
+  font-weight: 700;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.project-title:hover {
+  color: #cccccc;
+}
+
+.github-link {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+  transition: transform 0.2s ease;
+}
+
+.github-link img {
+  width: 22px;
+  height: 22px;
+  opacity: 0.9;
+  transition: opacity 0.3s ease, transform 0.2s ease;
+  filter: invert(1);
+}
+
+.github-link:hover img {
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
+/* Gallery Page */
+.gallery-card {
+  border: none !important;
+  border-radius: 6px !important;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.gallery-card img {
+  transition: transform 0.5s ease;
+}
+
+.gallery-card:hover {
+  transform: translateY(-5px);
+}
+
+.gallery-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Contact Page */
+.contact-card {
+  background-color: #1e1e1e !important;
+  border-radius: 6px !important;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  border: none !important;
+}
+
+.contact-link {
+  color: #a0a0a0;
+  text-decoration: none;
+  border-bottom: 1px solid #a0a0a0;
+  padding-bottom: 2px;
+  transition: all 0.3s ease;
+}
+
+.contact-link:hover {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #333333, #444444) !important;
+  border: none !important;
+  border-radius: 3px !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9em;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #444444, #333333) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Form Controls */
+.form-control {
+  border-radius: 3px !important;
+  border: 1px solid #333333 !important;
+  padding: 10px 15px !important;
+  background-color: #282828 !important;
+  color: #e0e0e0 !important;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {  
+  box-shadow: 0 0 0 3px rgba(255,255,255,0.1) !important;
+  border-color: #444444 !important;
+}
+
+.form-label {
+  color: #cccccc;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #181818;
+  color: #a0a0a0;
+  border-top: 1px solid #333;
+}
+
+/* Responsive Layout */
+#gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* List item styling */
+.list-group-item {
+  border: none !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  color: #cccccc;
+  background-color: transparent !important;
+  position: relative;
+  padding-left: 20px !important;
+}
+
+.list-group-item:before { 
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #a0a0a0;
+}
+
+/* Section headings */
+section h2 {
+  margin-bottom: 25px;  
+  position: relative;
+}
+
+section h2:after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: #a0a0a0;
+  margin: 15px auto 0;
+}
+
+/* Adjusting text styles */
+p {
+  color: #cccccc;
+  line-height: 1.8;
+}
+
+/* Card title improvements */
+.card-title {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+/* Additional spacing */
+.py-5 {
+  padding-top: 2.5rem !important;  
+  padding-bottom: 2.5rem !important;  
+}
+
+/* Making mobile-specific adjustments */
+@media (max-width: 767px) { 
+  .container {
+    width: 95%; 
+  }
+  
+  .hero {
+    padding: 30px 0 10px;  
+  }
+  
+  .hero .heading {
+    font-size: 2.8em;  
+  }
+  
+  .card-body {
+    padding: 20px !important;  
+  }
+}
+
+
+
