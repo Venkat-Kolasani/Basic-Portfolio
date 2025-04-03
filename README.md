@@ -1,6 +1,6 @@
 # Personal Portfolio Website
 
-A responsive portfolio website built with PHP, Bootstrap, and custom CSS.
+A responsive portfolio website built with PHP, Bootstrap, and CSS.
 
 ## Features
 - Responsive design using Bootstrap 5
